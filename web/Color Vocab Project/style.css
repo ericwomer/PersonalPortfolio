@@ -1,0 +1,30 @@
+#red {
+    color:red;
+}
+
+#blue {
+    color:blue;
+}
+
+#orange {
+    color:orange;
+    background: #0a0c0e; /* Set the background to #0a0c0e to save my eyes */
+}
+
+#green {
+    color:green;
+}
+
+#yellow {
+    color:yellow;
+    background-color: #0a0c0e; /* Set the background to #0a0c0e to save my eyes */
+}
+
+.color-title {
+    font-weight:normal;
+}
+
+img {
+    height:200px;
+    width:200px;
+}
