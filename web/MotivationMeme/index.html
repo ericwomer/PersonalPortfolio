@@ -14,3 +14,74 @@ But it must have the following features:
 6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
   https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Motovational MEME</title>
+  <style>
+
+    * {
+      background: black;
+    }
+
+    #meme {
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 2%;
+    }
+
+    #meme #insperation {
+      align-self: center;
+      width: 100%;
+      border: 5px solid white;
+      margin: 0 auto;
+    }
+
+    #meme .text {
+      font-family: 'Libre Baskerville', serif;
+      color: white;
+      text-align: center;
+    }
+
+    .statement {
+      text-transform: uppercase;
+    }
+
+    #footer {
+      float: right;
+      color: white;
+      font-family: sans-serif;
+      font-size: .75rem;
+    }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="meme">
+    <img id="insperation" src="assets/images/lucas-clara-hvPB-UCAmmU-unsplash.jpg" alt="determined climber" />
+    <h1 class="text statement">Determination</h1>
+    <p class="text phrase">Walk the path others will not because of the mountains they see in the distance.</p>
+    <p class="text phrase"></p>
+    <h1 class="text statement">Persistance</h1>
+    <p class="text phrase">Keep walking until you make those mountains become the path beneath your feet.</p>
+  </div>
+
+  <div id="footer">
+    <footer>
+      <p>Photo by <a
+          href="https://unsplash.com/@lux17?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lucas
+          Clara</a> on <a
+          href="https://unsplash.com/images/nature/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
