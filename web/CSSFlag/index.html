@@ -2,33 +2,224 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
-  <style>
-    /* Write your CSS Code here */
-    
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Glory</title>
+    <style>
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flag {
+            position: relative;
+            width: 60rem;
+            height: 31.58rem;
+            background: blueviolet; /* Will stand out if there are any alignment issues */
+        }
+
+        .unionjack {
+            position: absolute;
+            width: 24rem;
+            height: 17.005rem;
+            background: #002147;
+            z-index: 2;
+        }
+
+        .stripe {
+            position: relative;
+            width: 100%;
+            height: 2.4284rem;
+            z-index: 1;
+        }
+
+        .white {
+            background: white;
+        }
+
+        .red {
+            background: #BB133E;
+        }
+
+        .empty_space {
+            position: relative;
+        }
+
+        .grid {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(11, 1.9453rem);
+            grid-template-rows: repeat(9, 1.7453rem);
+            left: 0.99477rem;
+            top: 0.5rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .star {
+            position: relative;
+
+            display: inline-block;
+            width: 0;
+            height: 0;
+
+            margin-left: .9em;
+            margin-right: .9em;
+            margin-bottom: 1.2em;
+
+            border-right: .3em solid transparent;
+            border-bottom: .7em solid white;
+            border-left: .3em solid transparent;
+
+        }
+
+        .star::before,
+        .star::after {
+            content: '';
+
+            display: block;
+            width: 0;
+            height: 0;
+
+            position: absolute;
+            top: .6em;
+            left: -1em;
+
+            border-right: 1em solid transparent;
+            border-bottom: .7em solid white;
+            border-left: 1em solid transparent;
+
+            transform: rotate(-35deg);
+        }
+
+        .star::after {
+            transform: rotate(35deg);
+        }
+
+    </style>
 </head>
 
-<!-- 
-  IMPORTANT! Do not change any HTML
-Don't add any classes/ids/elements 
-Use what you know about combining selectors 
-and CSS specificity instead.
-Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
-Hint 2: You can use CSS inspection to get the colors from
-https://appbrewery.github.io/flag-of-laos/
--->
-
 <body>
-  <div class="flag">
-    <p>The Flag</p>
-    <div>
-      <div>
-        <p>of Laos</p>
-      </div>
+
+    <div class="flag">
+        <div class="unionjack">
+            <div class="grid">
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+                <div class="empty_space"></div>
+                <div class="star"></div>
+            </div>
+        </div>
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe red"></div>
     </div>
-  </div>
+
 </body>
 
 </html>
