@@ -6,16 +6,106 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
+
 .main {
   flex: 1;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2rem 20rem auto auto;
+  gap: 0.25rem;
+  align-items: center;
 }
 
 h1 {
+  grid-column: span 4;
   font-size: 5rem;
+  max-width: 50%;
+  margin: 0;
+  text-align: left;
+}
+
+.highlight {
+  color: midnightblue;
 }
 
 footer {
   text-align: right;
   color: midnightblue;
+  flex-shrink: 0;
+  grid-column: span 4;
 }
 
+.logo {
+  width: 15rem;
+  height: auto;
+}
+
+.card {
+  grid-column: span 2;
+}
+
+.tile-image {
+  width: 18rem;
+  float: left;
+  object-fit: contain;
+}
+
+.card-title {
+  margin-left: 20rem;
+}
+
+.card-text {
+  margin-left: 20rem;
+  max-width: 45%;
+}
+
+@media(max-width: 600px) {
+
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .logo {
+    flex: 1;
+    width: 7rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    flex: 2;
+    margin-bottom: 1rem;
+  }
+  .tile-image {
+    object-fit: cover;
+    width: 100%;
+    height: 13rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .card-text {
+    margin-left: 0;
+    margin-top: 1rem;
+    max-width: 100%; 
+  }
+}
